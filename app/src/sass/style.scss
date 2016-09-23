@@ -1,0 +1,36 @@
+/*
+ *  Variables
+ */
+$line-height: 1.618;
+
+/*
+ *  Methods
+ */
+
+/*
+ *  Resets
+ */
+* {
+    content: "";
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+    color: inherit;
+    line-height: $line-height;
+}
+*:before, *:after {
+    box-sizing: border-box;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*
+ *  Style 
+ */
+
+.start {
+    color: red;
+    background-color: #000;
+}
