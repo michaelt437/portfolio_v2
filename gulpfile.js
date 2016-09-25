@@ -14,13 +14,18 @@ var paths = {
 	styles: {
 		src: root.src + "/sass/**/*.scss",
 		dist: root.dist + "css/"
-	}
+	},
+    images: {
+        src: root.src + "/img/**/*",
+        dist: root.dist + "img/"
+    }
 }
 
 gulp.task('default', 
     gulp.series(
         html,
         styles,
+        images,
         gulp.parallel(serve, watch)
     )
 );
@@ -36,6 +41,11 @@ function styles(){
     .pipe(gulp.dest(paths.styles.dist))
     .pipe(browserSync.stream())
 }
+function images(){
+    return gulp.src(paths.images.src)
+    .pipe(gulp.dest(paths.images.dist))
+    .pipe(browserSync.stream())
+}
 function serve(){
     browserSync.init({
         server: root.dist
@@ -44,4 +54,5 @@ function serve(){
 function watch(){
     gulp.watch(paths.html.src, html);
     gulp.watch(paths.styles.src, styles)
+    gulp.watch(paths.images.src, images)
 }

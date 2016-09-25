@@ -1,36 +1,8 @@
-/*
- *  Variables
- */
-$line-height: 1.618;
+@charset "utf-8";
 
-/*
- *  Methods
- */
-
-/*
- *  Resets
- */
-* {
-    content: "";
-    margin: 0;
-    padding: 0;
-    font-size: inherit;
-    color: inherit;
-    line-height: $line-height;
-}
-*:before, *:after {
-    box-sizing: border-box;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-/*
- *  Style 
- */
-
-.start {
-    color: red;
-    background-color: #000;
-}
+@import "core/_bootstrap";
+@import "core/_variables.scss";
+@import "core/_functions.scss";
+@import "core/_resets.scss";
+@import "core/_color.scss";
+@import "core/_theme.scss";
