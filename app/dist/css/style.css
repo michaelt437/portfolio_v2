@@ -5857,10 +5857,10 @@ section {
   color: #FFF;
   border: 1px solid #FFF;
   background-color: transparent;
-  z-index: 2; }
+  z-index: 2;
+  transition: background-color .3s ease-out; }
   .logo:hover {
-    background-color: rgba(0, 0, 0, 0.5);
-    transition: background-color .3s ease-out; }
+    background-color: rgba(0, 0, 0, 0.5); }
 
 .home-bg {
   background: #666 url("../img/home-banner.jpg") no-repeat fixed 100%/cover;
