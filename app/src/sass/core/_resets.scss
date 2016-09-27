@@ -13,6 +13,10 @@
     box-sizing: border-box;
 }
 
+section:not(#home) {
+    display: none;
+}
+
 table {
     border-collapse: collapse;
     border-spacing: 0;

@@ -1,30 +1,11 @@
 /*
  *  Theme 
  */
-section {
+section:not(#home) {
     margin: 2em 0;
 }
 .container-fluid {
     padding: 0;
-}
-#home {
-    margin-top: 0;
-}
-.logo {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 15%;
-    margin: 0 auto;
-    padding: 2em 0;
-    color: $white;
-    border: 1px solid $white;
-    background-color: transparent;
-    z-index: 2;
-    transition: background-color .3s ease-out;
-    &:hover {
-        background-color: rgba(0, 0, 0, .5);
-    }
 }
 .home-bg {
     background: $gray url('../img/home-banner.jpg') no-repeat fixed 100% / cover;
@@ -40,6 +21,39 @@ section {
     right: 0;
     bottom: 0;
     left: 0;
-    opacity: .2;
+    opacity: .1;
     z-index: 1;
+}
+.home-body {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    padding: 2em 0;
+    color: $white;
+    z-index: 2;
+}
+.title {
+    position: relative;
+    padding: ($y * 4) 0;
+    border: 1px solid $white;
+    width: 15%;
+    margin: 0 auto ($y * 10);
+    background-color: transparent;
+    transition: background-color .3s ease-out;
+    &:hover {
+        background-color: rgba(0, 0, 0, .6);
+    }
+}
+.home-nav {
+    display: flex;
+    justify-content: center;
+    &:before, &:after {
+        content: "#";
+        display: block;
+        padding-top: 7.5px;
+    }
+}
+.item {
+    padding: $y $x;
 }

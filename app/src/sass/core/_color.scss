@@ -1,3 +1,20 @@
+/*
+ *  Colors
+ */
 $white: #FFF;
 $black: #000;
 $gray: #666;
+
+a {
+    text-decoration: none;
+        color: $gray;
+    transition: color .3s ease-out;
+    &:link, &:visited, &:active, &:focus {
+        color: $gray;
+        text-decoration: none;
+    }
+    &:hover {
+        color: $white;
+        text-decoration: none;
+    }
+}
