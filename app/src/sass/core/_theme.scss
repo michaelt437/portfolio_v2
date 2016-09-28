@@ -8,7 +8,7 @@ section:not(#home) {
     padding: 0;
 }
 .home-bg {
-    background: $gray url('../img/home-banner.jpg') no-repeat fixed 100% / cover;
+    background: $gray url('../img/home-banner-3.jpg') no-repeat fixed 50% / cover;
     position: relative;
     // padding: 22% 40%;
     height: 100vh;
@@ -34,10 +34,10 @@ section:not(#home) {
     z-index: 2;
 }
 .title {
+    display: inline-block;
     position: relative;
-    padding: ($y * 4) 0;
+    padding: ($y * 4) ($x * 20);
     border: 1px solid $white;
-    width: 15%;
     margin: 0 auto ($y * 10);
     background-color: transparent;
     transition: background-color .3s ease-out;
@@ -55,5 +55,5 @@ section:not(#home) {
     }
 }
 .item {
-    padding: $y $x;
+    padding: $y $x*6;
 }

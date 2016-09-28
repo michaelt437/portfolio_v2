@@ -5862,7 +5862,7 @@ section:not(#home) {
   padding: 0; }
 
 .home-bg {
-  background: #666 url("../img/home-banner.jpg") no-repeat fixed 100%/cover;
+  background: #666 url("../img/home-banner-3.jpg") no-repeat fixed 50%/cover;
   position: relative;
   height: 100vh;
   z-index: 0; }
@@ -5887,10 +5887,10 @@ section:not(#home) {
   z-index: 2; }
 
 .title {
+  display: inline-block;
   position: relative;
-  padding: 2em 0;
+  padding: 2em 10em;
   border: 1px solid #FFF;
-  width: 15%;
   margin: 0 auto 5em;
   background-color: transparent;
   transition: background-color .3s ease-out; }
@@ -5906,4 +5906,4 @@ section:not(#home) {
     padding-top: 7.5px; }
 
 .item {
-  padding: 0.5em 0.5em; }
+  padding: 0.5em 3em; }
