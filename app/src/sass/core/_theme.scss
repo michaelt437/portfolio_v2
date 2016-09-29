@@ -1,14 +1,22 @@
 /*
  *  Theme 
  */
-section:not(#home) {
+section {
     margin: 2em 0;
+}
+section#home { 
+    margin: 0;
+}
+
+#section2 {
+    background-color: indianred;
+    color: #fff;
 }
 .container-fluid {
     padding: 0;
 }
 .home-bg {
-    background: $gray url('../img/home-banner-3.jpg') no-repeat fixed 50% / cover;
+    background: $gray url('../img/home-banner.jpg') no-repeat fixed 50% / cover;
     position: relative;
     // padding: 22% 40%;
     height: 100vh;
@@ -42,7 +50,7 @@ section:not(#home) {
     background-color: transparent;
     transition: background-color .3s ease-out;
     &:hover {
-        background-color: rgba(0, 0, 0, .6);
+        background-color: rgba(0, 0, 0, .7);
     }
 }
 .home-nav {

@@ -5855,14 +5855,21 @@ a {
 /*
  *  Theme 
  */
-section:not(#home) {
+section {
   margin: 2em 0; }
+
+section#home {
+  margin: 0; }
+
+#section2 {
+  background-color: indianred;
+  color: #fff; }
 
 .container-fluid {
   padding: 0; }
 
 .home-bg {
-  background: #666 url("../img/home-banner-3.jpg") no-repeat fixed 50%/cover;
+  background: #666 url("../img/home-banner.jpg") no-repeat fixed 50%/cover;
   position: relative;
   height: 100vh;
   z-index: 0; }
@@ -5895,7 +5902,7 @@ section:not(#home) {
   background-color: transparent;
   transition: background-color .3s ease-out; }
   .title:hover {
-    background-color: rgba(0, 0, 0, 0.6); }
+    background-color: rgba(0, 0, 0, 0.7); }
 
 .home-nav {
   display: flex;
