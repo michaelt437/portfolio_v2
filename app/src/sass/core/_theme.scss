@@ -2,10 +2,10 @@
  *  Theme 
  */
 section {
-    margin: 2em 0;
+    padding: 2em 0;
 }
 section#home { 
-    margin: 0;
+    padding: 0;
 }
 
 #section2 {
@@ -19,7 +19,7 @@ section#home {
     background: $gray url('../img/home-banner.jpg') no-repeat fixed 50% / cover;
     position: relative;
     // padding: 22% 40%;
-    height: 100vh;
+    height: 90vh;
     z-index: 0;
 }
 .grid {
@@ -63,5 +63,5 @@ section#home {
     }
 }
 .item {
-    padding: $y $x*6;
+    padding: $y $x*10;
 }

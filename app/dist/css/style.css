@@ -5828,9 +5828,6 @@ button.close {
 *:before, *:after {
   box-sizing: border-box; }
 
-section:not(#home) {
-  display: none; }
-
 table {
   border-collapse: collapse;
   border-spacing: 0; }
@@ -5856,10 +5853,10 @@ a {
  *  Theme 
  */
 section {
-  margin: 2em 0; }
+  padding: 2em 0; }
 
 section#home {
-  margin: 0; }
+  padding: 0; }
 
 #section2 {
   background-color: indianred;
@@ -5871,7 +5868,7 @@ section#home {
 .home-bg {
   background: #666 url("../img/home-banner.jpg") no-repeat fixed 50%/cover;
   position: relative;
-  height: 100vh;
+  height: 90vh;
   z-index: 0; }
 
 .grid {
@@ -5913,4 +5910,4 @@ section#home {
     padding-top: 7.5px; }
 
 .item {
-  padding: 0.5em 3em; }
+  padding: 0.5em 5em; }
