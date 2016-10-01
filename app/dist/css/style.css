@@ -5868,7 +5868,7 @@ section#home {
 .home-bg {
   background: #666 url("../img/home-banner.jpg") no-repeat fixed 50%/cover;
   position: relative;
-  height: 90vh;
+  height: 100vh;
   z-index: 0; }
 
 .grid {
