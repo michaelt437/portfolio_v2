@@ -32,6 +32,21 @@ section#home {
     opacity: .1;
     z-index: 1;
 }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav > div {
+    background-color: blue;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.second {
+    justify-content: flex-end;
+}
 .home-body {
     position: relative;
     top: 50%;
@@ -55,13 +70,13 @@ section#home {
 }
 .home-nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     &:before, &:after {
         content: "#";
         display: block;
-        padding-top: 7.5px;
     }
 }
-.item {
-    padding: $y $x*10;
+.item:nth-child(2) {
+    flex-grow: .1;
 }
+

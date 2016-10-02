@@ -5881,6 +5881,18 @@ section#home {
   opacity: .1;
   z-index: 1; }
 
+nav {
+  display: flex;
+  justify-content: space-between; }
+
+nav > div {
+  background-color: blue;
+  flex-grow: 1;
+  text-align: center; }
+
+.second {
+  justify-content: flex-end; }
+
 .home-body {
   position: relative;
   top: 50%;
@@ -5903,11 +5915,10 @@ section#home {
 
 .home-nav {
   display: flex;
-  justify-content: center; }
+  justify-content: space-between; }
   .home-nav:before, .home-nav:after {
     content: "#";
-    display: block;
-    padding-top: 7.5px; }
+    display: block; }
 
-.item {
-  padding: 0.5em 5em; }
+.item:nth-child(2) {
+  flex-grow: .1; }
