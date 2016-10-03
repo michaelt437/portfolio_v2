@@ -8060,7 +8060,7 @@ section#home {
 .home-bg {
   background: #666 url("../img/home-banner.jpg") no-repeat fixed 50%/cover;
   position: relative;
-  height: 80vh;
+  height: 100vh;
   z-index: 0; }
 
 .grid {
@@ -8107,4 +8107,6 @@ nav > div {
 
 .home-bottom {
   position: absolute;
-  bottom: 0; }
+  bottom: 0;
+  padding-bottom: 1em;
+  width: 100%; }

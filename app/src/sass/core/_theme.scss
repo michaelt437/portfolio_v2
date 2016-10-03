@@ -20,7 +20,7 @@ section#home {
     background: $gray url('../img/home-banner.jpg') no-repeat fixed 50% / cover;
     position: relative;
     // padding: 22% 40%;
-    height: 80vh;
+    height: 100vh;
     z-index: 0;
 }
 .grid {
@@ -72,6 +72,6 @@ nav > div {
 .home-bottom {
     position: absolute;
     bottom: 0;
+    padding-bottom: 1em;
+    width: 100%;
 }
-
-

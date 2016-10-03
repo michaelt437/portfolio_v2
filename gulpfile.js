@@ -23,6 +23,10 @@ var paths = {
         src: root.src + "/img/**/*",
         dist: root.dist + "img/"
     },
+    fonts: {
+        src: root.src + "/fonts/**/*",
+        dist: root.dist + "fonts/"
+    },
 }
 
 gulp.task('default', 
@@ -31,6 +35,7 @@ gulp.task('default',
         styles,
         scripts,
         images,
+        fonts,
         gulp.parallel(serve, watch)
     )
 );
@@ -56,6 +61,11 @@ function scripts(){
     .pipe(gulp.dest(paths.scripts.dist))
     .pipe(browserSync.stream())
 }
+function fonts(){
+    return gulp.src(paths.fonts.src)
+    .pipe(gulp.dest(paths.fonts.dist))
+    .pipe(browserSync.stream())
+}
 function serve(){
     browserSync.init({
         server: root.dist,
@@ -67,4 +77,5 @@ function watch(){
     gulp.watch(paths.styles.src, styles);
     gulp.watch(paths.scripts.src, scripts);
     gulp.watch(paths.images.src, images);
+    gulp.watch(paths.fonts.src, fonts);
 }
