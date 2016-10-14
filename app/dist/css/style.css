@@ -8041,14 +8041,14 @@ a {
     text-decoration: none; }
 
 /*
- *  Theme 
+ *  Theme
  */
 section {
   padding: 2em 0; }
 
 section#home {
   padding: 0;
-  color: #666; }
+  color: #FFF; }
 
 #section2 {
   background-color: indianred;
@@ -8074,13 +8074,26 @@ section#home {
   z-index: 1; }
 
 nav {
+  overflow-x: hidden;
+  position: relative;
   display: flex;
-  justify-content: space-between; }
-
-nav > div {
-  padding: 1em 0;
-  flex-grow: 1;
-  text-align: center; }
+  justify-content: space-between;
+  z-index: 2; }
+  nav > div {
+    padding: 1em 0;
+    flex-grow: 1;
+    text-align: center; }
+  nav:before {
+    content: "";
+    position: absolute;
+    left: -30px;
+    right: -30px;
+    top: -50px;
+    bottom: 0px;
+    z-index: -1;
+    display: block;
+    background-color: #000;
+    filter: opacity(1); }
 
 .second {
   justify-content: flex-end; }
