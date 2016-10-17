@@ -1,12 +1,8 @@
 /*
  *  Theme
  */
-section {
+section:not(#home) {
     padding: 2em 0;
-}
-section#home {
-    padding: 0;
-    color: $white;
 }
 
 #section2 {
@@ -17,10 +13,9 @@ section#home {
     padding: 0;
 }
 .home-bg {
-    background: $gray url('../img/home-banner.jpg') no-repeat fixed 50% / cover;
+    background: $gray url('../img/home-banner-2.jpg') no-repeat fixed 50% / cover;
     position: relative;
-    // padding: 22% 40%;
-    height: 100vh;
+    height: 95vh;
     z-index: 0;
 }
 .grid {
@@ -35,32 +30,28 @@ section#home {
 }
 
 nav {
-    overflow-x: hidden;
     position: relative;
     display: flex;
     justify-content: space-between;
+    background: $black;
+    color: $white;
+    border-bottom: 1px solid $green;
     z-index: 2;
     & > div {
-        padding: ($y*2) 0;
         flex-grow: 1;
         text-align: center;
-    }
-    &:before{
-        content: "";
-        position: absolute;
-        left: -30px;
-        right: -30px;
-        top: -50px;
-        bottom: 0px;
-        z-index: -1;
-        display: block;
-        background-color: #000;
-        filter: opacity(1);
+        & > a {
+            display: block;
+            position: relative;
+            padding: ($y * 2) 0;
+            @include nav-link-hover-3;
+        }
     }
 }
 
 .second {
     justify-content: flex-end;
+    background-color: #231321;
 }
 .home-body {
     position: relative;

@@ -4,3 +4,15 @@ var reveal = function() {
         $(homepage[i]).css({'display': 'block'});
     }
 }
+
+    /*************
+    * PARALLAX SCROLL
+    * **********/
+
+    window.onscroll = function() {
+        var shift = -.5;
+        var bg = $('.home-bg');
+        var yPos = window.pageYOffset;
+        var pos = '50%' + (yPos * shift) + 'px';
+        bg.css({ 'background-position': pos });
+    }

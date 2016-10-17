@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web");
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -8005,6 +8006,8 @@ button.close {
   overflow: visible;
   clip: auto; }
 
+/*******************  Navigation Hovers
+\*******************/
 /*
  *  Resets
  */
@@ -8024,7 +8027,7 @@ table {
   border-spacing: 0; }
 
 body {
-  font-family: Verdana; }
+  font-family: 'Titillium Web', Verdana, sans-serif; }
 
 /*
  *  Colors
@@ -8032,23 +8035,19 @@ body {
 a {
   text-decoration: none;
   color: #666;
-  transition: color .3s ease-out; }
+  transition: all .2s ease-out; }
   a:link, a:visited, a:active, a:focus {
     color: #666;
     text-decoration: none; }
   a:hover {
-    color: #FFF;
+    color: #6a934e;
     text-decoration: none; }
 
 /*
  *  Theme
  */
-section {
+section:not(#home) {
   padding: 2em 0; }
-
-section#home {
-  padding: 0;
-  color: #FFF; }
 
 #section2 {
   background-color: indianred;
@@ -8058,9 +8057,9 @@ section#home {
   padding: 0; }
 
 .home-bg {
-  background: #666 url("../img/home-banner.jpg") no-repeat fixed 50%/cover;
+  background: #666 url("../img/home-banner-2.jpg") no-repeat fixed 50%/cover;
   position: relative;
-  height: 100vh;
+  height: 95vh;
   z-index: 0; }
 
 .grid {
@@ -8074,29 +8073,42 @@ section#home {
   z-index: 1; }
 
 nav {
-  overflow-x: hidden;
   position: relative;
   display: flex;
   justify-content: space-between;
+  background: #000;
+  color: #FFF;
+  border-bottom: 1px solid #6a934e;
   z-index: 2; }
   nav > div {
-    padding: 1em 0;
     flex-grow: 1;
     text-align: center; }
-  nav:before {
-    content: "";
-    position: absolute;
-    left: -30px;
-    right: -30px;
-    top: -50px;
-    bottom: 0px;
-    z-index: -1;
-    display: block;
-    background-color: #000;
-    filter: opacity(1); }
+    nav > div > a {
+      display: block;
+      position: relative;
+      padding: 1em 0; }
+      nav > div > a:before {
+        content: "[";
+        opacity: 0;
+        transform: translateX(10px);
+        display: inline-block;
+        transition: all .3s ease-in-out; }
+      nav > div > a:after {
+        content: "]";
+        opacity: 0;
+        transform: translateX(-10px);
+        display: inline-block;
+        transition: all .3s ease-in-out; }
+      nav > div > a:hover:before {
+        transform: translateX(-5px);
+        opacity: 1; }
+      nav > div > a:hover:after {
+        transform: translateX(5px);
+        opacity: 1; }
 
 .second {
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  background-color: #231321; }
 
 .home-body {
   position: relative;
