@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>michael tran</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </head>
 <body>
     <div class="content">
@@ -15,7 +14,7 @@
                     <div class="grid"></div>
                     <nav>
                         <div></div>
-                        <div><a href="/">michaeltran</a></div>
+                        <div><a href="javascript:void(0)">michaeltran</a></div>
                         <div></div>
                         <div></div>
                         <div></div>
@@ -32,6 +31,9 @@
                         <div></div>
                     </nav>
                     <div class="home-body text-center">
+                        <div class="title">
+                            dankness
+                        </div>
                     </div>
                     <div class="home-bottom">
                         <p class="text-center down"> <i class="fa fa-chevron-down fa-2x" aria-hidden="true"></i> </p>
@@ -113,88 +115,9 @@
             </div>
         </section>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/jquery.gsap.min.js"></script>
     <script src="js/script.js "></script>
 </body>
 </html>
-
-
-<style>
-/*
- * Your Stylesheet
- *
- * This stylesheet is loaded when Atom starts up and is reloaded automatically
- * when it is changed and saved.
- *
- * Add your own CSS or Less to fully customize Atom.
- * If you are unfamiliar with Less, you can read more about it here:
- * http://lesscss.org
- */
-
-
-/*
- * Examples
- * (To see them, uncomment and save)
- */
-
-// style the background color of the tree view
-.tree-view {
-  // background-color: whitesmoke;
-}
-
-// style the background and foreground colors on the atom-text-editor-element itself
-atom-text-editor {
-  // color: white;
-  background-color: #111;
-}
-
-// To style other content in the text editor's shadow DOM, use the ::shadow expression
-
-//Custom Theme 1
-.custom-theme-1 {
-    /**  HTML  **/
-    @html-tag: #E63462;
-    @html-attr: #e7e277;
-    @html-id: #3ae8f4;
-    @attr-val: #9dbf73;
-    @punc-tag: rgb(214, 209, 190);
-    @link-url: rgb(134, 99, 147);
-    @pseudo-elem: rgb(232, 236, 64);
-    @pseudo-class: rgb(131, 214, 172);
-    @property-val: rgb(108, 147, 119);
-    @style-func: rgb(200, 97, 222);
-    .cursor { border-color: rgb(133, 173, 25); }
-    .entity.name.tag.html { color: @html-tag; }
-    .entity.other.attribute-name.html { color: @html-attr; }
-    .entity.other.attribute-name.id { color: @html-id; }
-    .string.quoted.double.html { color: @attr-val; }
-    .punctuation.tag.html { color: @punc-tag; }
-    .link.hyperlink { color: @link-url; }
-
-    /**  CSS **/
-    .entity.name.tag.scss, .entity.name.tag.css { color:@html-tag; }
-    .entity.other.attribute-name.class.css { color: @attr-val; }
-    .entity.other.attribute-name.pseudo-element.css { color: @pseudo-elem; }
-    .entity.other.attribute-name.pseudo-class.css { color: @pseudo-class; }
-    .string.quoted.single, .string.quoted.double, .punctuation.string {
-        &.scss, &.css{
-            color: @link-url;
-        }
-    }
-    .support.constant.property-value {
-        &.scss, &.css { color: @property-val; }
-    }
-    .support.function.misc {
-        &.scss, &.css { color: @style-func; }
-    }
-
-    /** Javascript **/
-    .source.js { }
-}
-
-
-//Custom Theme 2
-
-atom-text-editor::shadow {
-    .custom-theme-1();
-}
-</style>

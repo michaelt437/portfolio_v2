@@ -8057,7 +8057,8 @@ section:not(#home) {
   padding: 0; }
 
 .home-bg {
-  background: #666 url("../img/home-banner-2.jpg") no-repeat fixed 50%/cover;
+  background: #666 url("../img/home-banner.jpg") no-repeat fixed 50%/cover;
+  background-size: 100% 100%;
   position: relative;
   height: 95vh;
   z-index: 0; }
@@ -8120,10 +8121,12 @@ nav {
   z-index: 2; }
 
 .title {
+  opacity: 0;
+  position: absolute;
   display: inline-block;
   position: relative;
   padding: 2em 10em;
-  border: 1px solid #FFF;
+  border: 2px solid #FFF;
   margin: 0 auto 5em;
   background-color: transparent;
   transition: background-color .3s ease-out; }

@@ -9,10 +9,13 @@ var reveal = function() {
     * PARALLAX SCROLL
     * **********/
 
-    window.onscroll = function() {
-        var shift = -.5;
-        var bg = $('.home-bg');
-        var yPos = window.pageYOffset;
-        var pos = '50%' + (yPos * shift) + 'px';
-        bg.css({ 'background-position': pos });
-    }
+    // window.onscroll = function() {
+    //     var shift = -.5;
+    //     var bg = $('.home-bg');
+    //     var yPos = window.pageYOffset;
+    //     var pos = '50%' + (yPos * shift) + 'px';
+    //     bg.css({ 'background-position': pos });
+    // }
+
+var tl = new TimelineMax({repeat:10, repeatDelay: 1});
+tl.to($('.home-bg'), 60, {backgroundSize: "200%"})
