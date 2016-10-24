@@ -6,6 +6,7 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 @import url("https://fonts.googleapis.com/css?family=Titillium+Web");
+@import url("https://fonts.googleapis.com/css?family=Knewave");
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -8049,6 +8050,9 @@ a {
 section:not(#home) {
   padding: 2em 0; }
 
+#section1 {
+  background: #000; }
+
 #section2 {
   background-color: indianred;
   color: #fff; }
@@ -8057,29 +8061,29 @@ section:not(#home) {
   padding: 0; }
 
 .home-bg {
-  background: #666 url("../img/home-banner.jpg") no-repeat fixed 50%/cover;
+  background: #666 url("../img/home-banner-2.jpg") no-repeat fixed 50%/cover;
   background-size: 100% 100%;
   position: relative;
   height: 95vh;
   z-index: 0; }
 
 .grid {
-  background: url("../img/grid.png") repeat;
+  background: url("../img/grid-2.png") repeat;
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  opacity: .1;
+  opacity: .6;
   z-index: 1; }
 
 nav {
   position: relative;
   display: flex;
   justify-content: space-between;
-  background: #000;
   color: #FFF;
-  border-bottom: 1px solid #6a934e;
+  background-color: #000;
+  border-bottom: 2px solid #6a934e;
   z-index: 2; }
   nav > div {
     flex-grow: 1;
@@ -8107,6 +8111,13 @@ nav {
         transform: translateX(5px);
         opacity: 1; }
 
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  opacity: 0;
+  width: 100%;
+  transition: opacity .3s ease; }
+
 .second {
   justify-content: flex-end;
   background-color: #231321; }
@@ -8121,7 +8132,7 @@ nav {
   z-index: 2; }
 
 .title {
-  opacity: 0;
+  font-family: 'Knewave', 'Titillium Web';
   position: absolute;
   display: inline-block;
   position: relative;
@@ -8130,6 +8141,8 @@ nav {
   margin: 0 auto 5em;
   background-color: transparent;
   transition: background-color .3s ease-out; }
+  .title h1 {
+    margin: 0; }
   .title:hover {
     background-color: rgba(0, 0, 0, 0.7); }
 
