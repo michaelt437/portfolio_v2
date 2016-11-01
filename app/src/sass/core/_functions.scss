@@ -5,6 +5,47 @@
         display: block;
     }
 }
+/*******************\
+  Grid System
+\*******************/
+$container-widths: (
+    '(min-width: 768px)': '750',
+    '(min-width: 992px)': '970',
+    '(min-width: 1200px)': '1170',
+);
+$breakpoints: (
+    'lg': '(max-width: 1199px)',
+    'md': '(max-width: 991px)',
+    'sm': '(max-width: 767px)',
+);
+@mixin containers() {
+    @each $screen-width, $container-width in $container-widths {
+        @media #{$screen-width} {
+            & { max-width: #{$container-width}px; }
+        }
+    }
+}
+@mixin columns($max){
+    @each $screen-width, $media-query in $breakpoints {
+        @for $i from 1 through $max {
+            .col-#{$screen-width}-#{$i} {
+                box-sizing: border-box;
+                float: left;
+                padding: 0 15px;
+                background-color: transparent;
+                background-clip: content-box;
+                width: percentage($i/$max);
+            }
+        }
+        @media #{$media-query}{
+            [class*="#{$screen-width}"]{
+                width: 100%;
+                margin-bottom: .5em;
+                float: none;
+            }
+        }
+    }
+}
 
 /*******************\
   Navigation Hovers

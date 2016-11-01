@@ -1,0 +1,31 @@
+/*
+ *  Grid
+ */
+.container {
+    @include containers;
+    margin: 0 auto;
+    padding: 30px 15px;
+    @include clearfix;
+}
+.row {
+    margin: 0 -15px;
+    @include clearfix;
+}
+// .col-1 {
+//     box-sizing: border-box;
+//     width: percentage(1/$max);
+//     float: left;
+//     padding: 0 15px;
+//     background-color: red;
+//     background-clip: content-box;
+// }
+// .col-6 {
+//     box-sizing: border-box;
+//     width: percentage(6/$max);
+//     float: left;
+//     padding: 0 15px;
+//     background-color: red;
+//     background-clip: content-box;
+// }
+
+@include columns($max);

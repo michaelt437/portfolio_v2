@@ -7,6 +7,10 @@ var reveal = function() {
     }
 }
 
+function getAnime() {
+
+    document.getElementById('random').textContent = Math.floor((Math.random()*72) + 1 );
+}
 
 
 
