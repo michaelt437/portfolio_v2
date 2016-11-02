@@ -8591,7 +8591,7 @@ section:not(#home) {
   background: #666 url("../img/home-banner-2.jpg") no-repeat fixed 50%/cover;
   background-size: 100% 100%;
   position: relative;
-  height: 95vh;
+  height: 100vh;
   z-index: 0; }
 
 .grid {
@@ -8605,13 +8605,15 @@ section:not(#home) {
   z-index: 1; }
 
 nav {
-  position: relative;
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   color: #FFF;
-  background-color: #000;
-  border-bottom: 2px solid #6a934e;
   z-index: 2; }
+  nav#top-nav {
+    background-color: #000;
+    border-bottom: 2px solid #6a934e; }
   nav > div {
     flex-grow: 1;
     text-align: center; }
@@ -8641,9 +8643,13 @@ nav {
 .fixed-nav {
   position: fixed;
   top: 0;
-  opacity: 0;
   width: 100%;
   transition: opacity .3s ease; }
+  .fixed-nav > .fixed-nav-item {
+    opacity: 0;
+    background-color: #000;
+    border-bottom: 2px solid #6a934e;
+    transition: opacity .3s ease; }
 
 .second {
   justify-content: flex-end;

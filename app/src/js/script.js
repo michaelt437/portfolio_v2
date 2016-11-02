@@ -8,7 +8,6 @@ var reveal = function() {
 }
 
 function getAnime() {
-
     document.getElementById('random').textContent = Math.floor((Math.random()*72) + 1 );
 }
 
@@ -17,7 +16,7 @@ function getAnime() {
 /*************
  * PARALLAX SCROLL
  * **********/
-
+var fixedItems = document.getElementsByClassName('fixed-nav-item');
 window.onscroll = function() {
     var top = window.pageYOffset;
     var homeHeight = document.getElementById('home').scrollHeight;
@@ -30,9 +29,25 @@ window.onscroll = function() {
         'background-position': pos
     });
     if(diff <= 100){
-        $('.fixed-nav').css({'opacity':1});
+        document.getElementById('fixed-nav').style.opacity = 1;
+        var counter = 0;
+        var i = setInterval(function(){
+            fixedItems[counter].style.opacity = 1;
+            counter++;
+            if(counter === fixedItems.length) {
+                clearInterval(i);
+            }
+        }, 50);
     }else{
-        $('.fixed-nav').css({'opacity':0});
+        document.getElementById('fixed-nav').style.opacity = 0;
+        var counter = fixedItems.length;
+        var i = setInterval(function(){
+            fixedItems[counter].style.opacity = 0;
+            counter--;
+            if(counter === 0) {
+                clearInterval(i);
+            }
+        }, 2);
     }
 }
 

@@ -20,7 +20,7 @@ section:not(#home) {
     background: $gray url('../img/home-banner-2.jpg') no-repeat fixed 50% / cover;
     background-size: 100% 100%;
     position: relative;
-    height: 95vh;
+    height: 100vh;
     z-index: 0;
 }
 .grid {
@@ -35,13 +35,16 @@ section:not(#home) {
 }
 
 nav {
-    position: relative;
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     color: $white;
-    background-color: $black;
-    border-bottom: 2px solid $green;
     z-index: 2;
+    &#top-nav {
+        background-color: $black;
+        border-bottom: 2px solid $green;
+    }
     & > div {
         flex-grow: 1;
         text-align: center;
@@ -57,9 +60,14 @@ nav {
 .fixed-nav {
     position: fixed;
     top: 0;
-    opacity: 0;
     width: 100%;
     transition: opacity .3s ease;
+    & > .fixed-nav-item {
+        opacity: 0;
+        background-color: $black;
+        border-bottom: 2px solid $green;
+        transition: opacity .3s ease;
+    }
 }
 
 .second {
