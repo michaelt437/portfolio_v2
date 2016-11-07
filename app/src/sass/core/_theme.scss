@@ -18,7 +18,7 @@ section:not(#home) {
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;       
+  -ms-user-select: none;
   user-select: none;
 }
 .container-fluid {
@@ -42,39 +42,23 @@ section:not(#home) {
     z-index: 1;
 }
 
-nav {
-    position: fixed;
+#fixed-nav {
+    position: absolute;
     width: 100%;
     display: flex;
     justify-content: space-between;
     color: $white;
     z-index: 2;
-    &#top-nav {
-        background-color: $black;
-        border-bottom: 2px solid $green;
-    }
     & > div {
         flex-grow: 1;
         text-align: center;
+        background-color: $black;
+        border-bottom: 2px solid $green;
         & > a {
             display: block;
-            position: relative;
             padding: ($y * 2) 0;
             @include nav-link-hover-3;
         }
-    }
-}
-
-.fixed-nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    transition: opacity .3s ease;
-    & > .fixed-nav-item {
-        opacity: 0;
-        background-color: $black;
-        border-bottom: 2px solid $green;
-        transition: opacity .3s ease;
     }
 }
 
@@ -114,4 +98,19 @@ nav {
     bottom: 0;
     padding-bottom: 1em;
     width: 100%;
+    z-index: 2;
+}
+
+.circle {
+    fill: transparent;
+    stroke: $green;
+    stroke-width: 4px;
+    stroke-dasharray: 889px;
+    stroke-dashoffset: -889px;
+    transition: fill .4s ease-in, stroke-dashoffset 1s ease-in .4s;
+}
+.circle.toggle {
+    fill: $green;
+    stroke-dashoffset: 0px;
+    transition: stroke-dashoffset 1s ease-out, fill .4s ease-out 1s;
 }

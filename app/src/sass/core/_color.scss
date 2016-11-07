@@ -5,16 +5,11 @@ $white: #FFF;
 $black: #000;
 $gray: #666;
 $green: rgb(106, 147, 78);
-a {
+a, a:link, a:visited, a:active, a:focus {
     text-decoration: none;
     color: $gray;
     transition: all .2s ease-out;
-    &:link, &:visited, &:active, &:focus {
-        color: $gray;
-        text-decoration: none;
-    }
-    &:hover {
-        color: $green;
-        text-decoration: none;
-    }
+}
+a:hover {
+    color: $green;
 }
