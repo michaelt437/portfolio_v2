@@ -2,8 +2,8 @@
   "name": "portfolio_v2",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "vite serve src",
+    "build": "vite build src",
     "preview": "vite preview"
   },
   "devDependencies": {
