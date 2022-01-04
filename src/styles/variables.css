@@ -1,0 +1,9 @@
+:root {
+  --fontSize: 14px;
+
+  --colorMain: #272e48;
+  --colorAccent: #1fd7f8;
+  --colorGray: #eaeaea;
+
+  --borderRadius: 2px;
+}
