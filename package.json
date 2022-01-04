@@ -1,12 +1,16 @@
 {
   "name": "portfolio_v2",
-  "version": "0.0.0",
+  "author": "Michael Tran",
+  "description": "Portfolio refresh 2022",
+  "version": "1.0.0",
   "scripts": {
     "dev": "vite serve src",
     "build": "vite build src",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "npm run dev"
   },
   "devDependencies": {
     "vite": "^2.7.2"
-  }
+  },
+  "license": "MIT"
 }
