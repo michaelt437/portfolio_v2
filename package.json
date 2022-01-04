@@ -4,8 +4,8 @@
   "description": "Portfolio refresh 2022",
   "version": "1.0.0",
   "scripts": {
-    "dev": "vite serve src",
-    "build": "vite build src",
+    "dev": "vite serve",
+    "build": "vite build",
     "preview": "vite preview",
     "start": "npm run dev"
   },
