@@ -1,0 +1,11 @@
+:root {
+  --font-size: 14px;
+
+  --color-main: #f2f3f8;
+  --color-accent: #4aa5e1;
+  --color-black: #000;
+  --color-white: #fff;
+  --color-dark-gray: #222;
+
+  --border-radius: 3px;
+}

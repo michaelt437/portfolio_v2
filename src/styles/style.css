@@ -1,0 +1,17 @@
+@import "variables.css";
+@import "reset.css";
+
+html,
+body {
+  background-color: var(--color-main);
+  font-size: var(--font-size);
+}
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: var(--color-accent);
+  margin-top: 2rem;
+}
