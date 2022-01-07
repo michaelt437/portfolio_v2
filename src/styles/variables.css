@@ -2,10 +2,13 @@
   --font-size: 14px;
 
   --color-main: #f2f3f8;
-  --color-accent: #4aa5e1;
+  /* --color-accent: #32d0d1; */
+  --hue: 353;
+  --degrees: 0deg;
+  --color-accent: hsl(353, 61%, 64%);
   --color-black: #000;
   --color-white: #fff;
-  --color-dark-gray: #222;
+  --color-dark-gray: #444;
 
   --border-radius: 3px;
 }
