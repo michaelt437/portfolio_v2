@@ -1,0 +1,28 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  position: sticky;
+}
+
+.logo {
+  --main-color: hsl(var(--hue), 61%, 64%);
+  background-color: var(--main-color);
+  border-radius: 40%;
+  color: var(--color-white);
+  padding: 0.5rem;
+  transform: rotate(var(--degrees));
+}
+
+.nav-items {
+  .nav-item {
+    display: inline;
+    list-style: none;
+    padding: 0 1rem;
+
+    &.active {
+      color: var(--color-accent);
+    }
+  }
+}
