@@ -1,12 +1,27 @@
 @import "variables.css";
 @import "reset.css";
 @import "typography.css";
+@import "navigation.css";
 
 html,
 body {
-  font-family: "Source Sans Pro", Arial, sans-serif;
   background-color: var(--color-main);
+  color: var(--color-dark-gray);
+  font-family: "Source Sans Pro", Arial, sans-serif;
   font-size: var(--font-size);
+}
+
+.container {
+  margin: 0 auto;
+  @media (min-width: 1024px) {
+    width: 900px;
+  }
+  @media (min-width: 1280px) {
+    width: 1120px;
+  }
+  @media (min-width: 1536px) {
+    width: 1200px;
+  }
 }
 
 #app {
@@ -15,4 +30,8 @@ body {
   text-align: center;
   color: var(--color-accent);
   margin-top: 2rem;
+}
+
+.pointer {
+  cursor: pointer;
 }
