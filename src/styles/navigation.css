@@ -27,6 +27,7 @@
 
 .nav-items {
   .nav-item {
+    cursor: pointer;
     display: inline;
     list-style: none;
     padding: 0 1rem;
