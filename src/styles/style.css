@@ -31,3 +31,7 @@ body {
   color: var(--color-accent);
   margin-top: 2rem;
 }
+
+.pointer {
+  cursor: pointer;
+}
