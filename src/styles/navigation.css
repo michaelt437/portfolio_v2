@@ -9,10 +9,20 @@
 .logo {
   --main-color: hsl(var(--hue), 61%, 64%);
   background-color: var(--main-color);
-  border-radius: 40%;
   color: var(--color-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 0.5rem;
-  transform: rotate(var(--degrees));
+  position: relative;
+  animation: amoebous 5s ease-in-out infinite alternate,
+    spin 30s linear infinite;
+
+  &::before {
+    content: "MT";
+    display: block;
+    animation: spin 30s linear infinite reverse;
+  }
 }
 
 .nav-items {
@@ -24,5 +34,24 @@
     &.active {
       color: var(--color-accent);
     }
+  }
+}
+
+@keyframes amoebous {
+  from {
+    border-radius: 70% 30% 30% 70% / 40% 40% 60% 60%;
+  }
+
+  to {
+    border-radius: 30% 70% 70% 30% / 60% 60% 40% 40%;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
