@@ -4,6 +4,5 @@ document.querySelector("#app").innerHTML = `
 `;
 
 document.addEventListener("mousemove", (e) => {
-  // document.documentElement.style.setProperty("--hue", e.clientX * 0.09);
-  document.documentElement.style.setProperty("--degrees", e.clientX + "deg");
+  document.documentElement.style.setProperty("--hue", e.clientX * 0.09);
 });
