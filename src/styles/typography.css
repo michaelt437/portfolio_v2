@@ -17,6 +17,10 @@ h1 {
   color: var(--color-accent);
 }
 
+.text-tert {
+  color: var(--color-tert);
+}
+
 .text-dark-gray {
   color: var(--color-dark-gray);
 }

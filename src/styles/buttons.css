@@ -1,13 +1,23 @@
 .btn {
+  --main-color: var(--color-tert);
   padding: 0.5rem 1rem;
-  border: 1px solid var(--color-dark-gray);
+  background-color: transparent;
+  border: 1px solid var(--main-color);
   border-radius: var(--border-radius);
-  color: var(--color-dark-gray);
+  color: var(--main-color);
 }
 
 .btn-accent {
-  background-color: var(--color-accent);
-  border-color: var(--color-accent);
+  --main-color: var(--color-accent);
+  background-color: var(--main-color);
+  border-color: var(--main-color);
+  color: var(--color-white);
+}
+
+.btn-tert {
+  --main-color: var(--color-tert);
+  background-color: var(--main-color);
+  border-color: var(--main-color);
   color: var(--color-white);
 }
 
