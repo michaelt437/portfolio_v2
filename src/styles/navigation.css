@@ -4,6 +4,7 @@
   align-items: center;
   padding: 1.5rem 2rem;
   position: sticky;
+  top: 0;
 }
 
 .logo {
@@ -38,6 +39,7 @@
 }
 
 .nav-items {
+  display: none;
   @media (max-width: 767px) {
     background-color: var(--color-main);
     position: fixed;
