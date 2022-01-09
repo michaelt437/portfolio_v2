@@ -3,6 +3,8 @@
 @import "typography.css";
 @import "navigation.css";
 @import "hero.css";
+@import "buttons.css";
+
 html,
 body {
   background-color: var(--color-main);
