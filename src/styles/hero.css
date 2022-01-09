@@ -1,8 +1,45 @@
 .hero {
   padding: 0 12rem;
-  height: 500px;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
+  position: relative;
+
+  * {
+    z-index: 2;
+  }
+}
+
+.blob {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  border: 1px solid;
+  border-radius: 50%;
+  opacity: 0.4;
+  z-index: 1;
+
+  &.one {
+    border-color: var(--blob-three);
+    top: 0px;
+    right: 50px;
+    animation: amoebous 5s ease-in-out infinite alternate-reverse,
+      spin 30s linear infinite;
+  }
+
+  &.two {
+    border-color: var(--blob-two);
+    bottom: 20px;
+    right: 450px;
+    width: 300px;
+    height: 300px;
+    animation: amoebous 5s ease-in-out infinite alternate-reverse,
+      spin 30s linear infinite reverse;
+  }
+}
+
+.hero .btn-group {
+  margin-top: 3rem;
 }
