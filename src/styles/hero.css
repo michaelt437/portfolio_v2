@@ -1,13 +1,13 @@
 .hero {
   padding: 0 12rem;
-  height: 70vh;
+  height: 800px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
   position: relative;
 
-  * {
+  > * {
     z-index: 2;
   }
 }
@@ -18,25 +18,26 @@
   position: absolute;
   border: 1px solid;
   border-radius: 50%;
-  opacity: 0.4;
   z-index: 1;
 
   &.one {
-    border-color: var(--blob-three);
+    border-color: var(--color-tert);
     top: 0px;
     right: 50px;
-    animation: amoebous 5s ease-in-out infinite alternate-reverse,
-      spin 30s linear infinite;
+    opacity: 0.6;
+    animation: amoebous 15s ease-in-out infinite alternate-reverse,
+      spin 120s linear infinite;
   }
 
   &.two {
-    border-color: var(--blob-two);
-    bottom: 20px;
-    right: 450px;
+    border-color: var(--color-accent);
+    bottom: 100px;
+    right: 370px;
     width: 300px;
     height: 300px;
-    animation: amoebous 5s ease-in-out infinite alternate-reverse,
-      spin 30s linear infinite reverse;
+    opacity: 0.3;
+    animation: amoebous 30s ease-in-out infinite alternate-reverse,
+      spin 70s linear infinite reverse;
   }
 }
 
