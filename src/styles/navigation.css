@@ -11,20 +11,18 @@
 
 .logo {
   --main-color: hsl(var(--hue), 61%, 64%);
-  background-color: var(--main-color);
+  background-color: var(--color-tert);
+  border-radius: 50%;
   color: var(--color-white);
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0.6rem;
   position: relative;
-  animation: amoebous 5s ease-in-out infinite alternate,
-    spin 30s linear infinite;
 
   &::before {
     content: "MT";
     display: block;
-    animation: spin 30s linear infinite reverse;
   }
 }
 
