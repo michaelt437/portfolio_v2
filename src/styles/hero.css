@@ -1,0 +1,51 @@
+.hero {
+  padding: 0 10rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+
+  > * {
+    z-index: 2;
+  }
+}
+
+.blob {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  border: 1px solid;
+  border-radius: 50%;
+  z-index: 1;
+
+  &.one {
+    border-color: var(--color-tert);
+    top: 0px;
+    right: 50px;
+    opacity: 0.5;
+    animation: amoebous 15s ease-in-out infinite alternate-reverse,
+      spin 120s linear infinite;
+  }
+
+  &.two {
+    border-color: var(--color-accent);
+    bottom: 100px;
+    right: 370px;
+    width: 300px;
+    height: 300px;
+    opacity: 0.3;
+    animation: amoebous 30s ease-in-out infinite alternate-reverse,
+      spin 70s linear infinite reverse;
+  }
+}
+
+.hero .btn-group {
+  margin-top: 3rem;
+}
+
+.hero h1 {
+  border-left: 0.15rem solid var(--color-accent);
+  line-height: 1;
+  padding-left: 1rem;
+}

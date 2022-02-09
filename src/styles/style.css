@@ -1,7 +1,10 @@
 @import "variables.css";
 @import "reset.css";
 @import "typography.css";
+@import "spacing.css";
 @import "navigation.css";
+@import "hero.css";
+@import "buttons.css";
 
 html,
 body {
@@ -13,6 +16,7 @@ body {
 
 .container {
   margin: 0 auto;
+  position: relative;
   @media (min-width: 1024px) {
     width: 900px;
   }
@@ -22,14 +26,6 @@ body {
   @media (min-width: 1536px) {
     width: 1200px;
   }
-}
-
-#app {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: var(--color-accent);
-  margin-top: 2rem;
 }
 
 .pointer {

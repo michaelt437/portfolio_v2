@@ -3,10 +3,15 @@
 
   --color-main: #f2f3f8;
   --color-accent: #68b29a;
+  --color-tert: #bb7e8c;
   --color-black: #000;
   --color-white: #fff;
-  --color-dark-gray: #444;
+  --color-dark-gray: #474448;
 
   --border-radius: 3px;
   --hue: 353;
+
+  --blob-one: #392f5a;
+  --blob-two: #058ed9;
+  --blob-three: #b6465f;
 }
