@@ -23,7 +23,7 @@
     border-color: var(--color-tert);
     top: 0px;
     right: 50px;
-    opacity: 0.6;
+    opacity: 0.5;
     animation: amoebous 15s ease-in-out infinite alternate-reverse,
       spin 120s linear infinite;
   }
@@ -45,7 +45,7 @@
 }
 
 .hero h1 {
-  border-left: 0.25rem solid var(--color-accent);
-  padding-left: 1rem;
+  border-left: 0.15rem solid var(--color-accent);
   line-height: 1;
+  padding-left: 1rem;
 }
