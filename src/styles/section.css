@@ -1,0 +1,27 @@
+.section {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+  padding: 0 10rem;
+  justify-content: space-between;
+}
+
+.details,
+.gallery {
+  flex-basis: 45%;
+}
+
+.description {
+  margin: 1.5rem 0;
+}
+
+.gallery {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.gallery img {
+  width: 100%;
+  display: block;
+}

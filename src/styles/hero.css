@@ -1,4 +1,4 @@
-.hero {
+#hero {
   padding: 0 10rem;
   height: 100vh;
   display: flex;
@@ -40,11 +40,11 @@
   }
 }
 
-.hero .btn-group {
+#hero .btn-group {
   margin-top: 3rem;
 }
 
-.hero h1 {
+#hero h1 {
   border-left: 0.15rem solid var(--color-accent);
   line-height: 1;
   padding-left: 1rem;
