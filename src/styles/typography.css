@@ -42,3 +42,10 @@ h3 {
 .text-white {
   color: var(--color-white);
 }
+
+a,
+a:hover,
+a:active,
+a:visited {
+  text-decoration: none;
+}
