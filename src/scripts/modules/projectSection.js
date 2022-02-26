@@ -6,11 +6,11 @@ const projectsBin = [
   {
     name: "Movie Nights Roulette",
     description:
-      "Using data from TMDB, I built this application to easily add movies to a pool and let fate decide tonight's movies with the press of a button.'",
+      "Using data from TMDB, I built this application to easily add movies to a pool and let fate decide tonight's movies with the press of a button.",
     siteUrl: "https://movienights.netlify.app",
     githubUrl: `${GITHUBHOST}/movie-nights-pwa`,
     imagePath: "../../img/mnhome.png",
-    stack: ["vue", "typescript", "tailwindcss", "firebase"],
+    stack: ["vue", "typescript", "tailwindcss", "firestore"],
   },
   {
     name: "Comics Library",
@@ -26,7 +26,7 @@ const projectsBin = [
     siteUrl: "/",
     githubUrl: `${GITHUBHOST}/portfolio_v2`,
     imagePath: "",
-    stack: ["vite", "javascript"],
+    stack: ["javascript", "vite"],
   },
 ];
 
