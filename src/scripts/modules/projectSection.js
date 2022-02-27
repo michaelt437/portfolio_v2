@@ -6,7 +6,7 @@ const projectsBin = [
   {
     name: "Movie Nights Roulette",
     description:
-      "Using data from TMDB, I built this application to easily add movies to a pool and let fate decide tonight's movies with the press of a button.",
+      "Using data from The Movie Database (TMDB), I built this application to easily manage a pool of movie choices and let fate decide tonight's movie with the press of a button. Currently using Vue 2, but eventually I will migrate to Vue 3.",
     siteUrl: "https://movienights.netlify.app",
     githubUrl: `${GITHUBHOST}/movie-nights-pwa`,
     imagePath: "../../img/mnhome.png",
@@ -14,7 +14,8 @@ const projectsBin = [
   },
   {
     name: "Comics Library",
-    description: "",
+    description:
+      "This CRUD application helps me keep track of my comic books - books I have, books I've read, keep a wishlist. I use this project to learn React and to try out a Firebase alternative called Supabase.",
     siteUrl: "https://comicslib.netlify.app",
     githubUrl: `${GITHUBHOST}/comiclib-next`,
     imagePath: "../../img/clhome.png",
