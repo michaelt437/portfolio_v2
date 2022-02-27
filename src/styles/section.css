@@ -3,12 +3,22 @@
   align-items: center;
   margin: 10rem 0;
   padding: 0 10rem;
-  justify-content: space-between;
+}
+
+.section.portfolio {
+  justify-content: center;
+  text-align: center;
+  margin-right: 10rem;
+  margin-left: 10rem;
+  padding: 3rem;
+  background-color: var(--color-light-gray);
+  border-radius: var(--border-radius);
 }
 
 .details,
 .gallery {
   flex-basis: 45%;
+  z-index: 2;
 }
 
 .description {
@@ -17,6 +27,7 @@
 }
 
 .gallery {
+  margin-left: auto;
   position: relative;
   overflow: hidden;
   border-radius: 1rem;

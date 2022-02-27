@@ -21,14 +21,6 @@ const projectsBin = [
     imagePath: "../../img/clhome.png",
     stack: ["nextjs", "typescript", "tailwindcss", "supabase"],
   },
-  {
-    name: "Portfolio",
-    description: "",
-    siteUrl: "/",
-    githubUrl: `${GITHUBHOST}/portfolio_v2`,
-    imagePath: "",
-    stack: ["javascript", "vite"],
-  },
 ];
 
 function generateProjectBlocks() {
@@ -37,6 +29,7 @@ function generateProjectBlocks() {
       .map(
         ({ name, description, siteUrl, githubUrl, imagePath, stack }) => `
 <div class="section">
+	<div class="halo"></div>
 	<div class="details">
 		<h3>${name}</h3>
 		<p class="description">
@@ -50,7 +43,8 @@ function generateProjectBlocks() {
 			<a href="${githubUrl}" target="_blank" rel="noreferrer" class="btn">Github</a>
 		</div>
 	</div>
-	<div class="gallery"><a href="${siteUrl}" target="_blank" rel="noreferrer"><img src="${imagePath}" /></a></div>
+	<div class="gallery">
+					<a href="${siteUrl}" target="_blank" rel="noreferrer"><img src="${imagePath}" /></a></div>
 </div>
 `
       )
@@ -69,7 +63,23 @@ function generateStackBadges(stackArr) {
 	`;
 }
 
+function generatePortfolioSection() {
+  return ` 
+<div class="section portfolio">
+	<div class="details">
+		<h3>michaeltran.dev</h3>
+		<p class="description" style="margin: 2rem 0;">
+			Made with Vite and Javascript 
+		</p>
+			<a href="${GITHUBHOST}/portfolio_v2" target="_blank" rel="noreferrer" class="btn">Github</a>
+			</div>
+</div>
+`;
+}
+
 export function initProjects() {
   const projects = generateProjectBlocks();
+  const portfolioSection = generatePortfolioSection();
   projectSectionId.insertAdjacentHTML("beforeend", projects);
+  projectSectionId.insertAdjacentHTML("beforeend", portfolioSection);
 }
