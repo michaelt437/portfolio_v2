@@ -5,6 +5,8 @@
 @import "navigation.css";
 @import "hero.css";
 @import "buttons.css";
+@import "badges.css";
+@import "section.css";
 
 html,
 body {
@@ -33,4 +35,8 @@ body {
 
 .pointer {
   cursor: pointer;
+}
+
+.text-center {
+  text-align: center;
 }

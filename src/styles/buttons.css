@@ -5,6 +5,7 @@
   border: 1px solid var(--main-color);
   border-radius: var(--border-radius);
   color: var(--main-color);
+  font-size: 0.9rem;
 }
 
 .btn-accent {
@@ -25,4 +26,8 @@
   background-color: var(--color-dark-gray);
   border-color: var(--color-dark-gray);
   color: var(--color-white);
+}
+
+a.btn {
+  display: inline-block;
 }

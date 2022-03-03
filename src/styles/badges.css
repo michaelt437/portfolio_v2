@@ -1,0 +1,11 @@
+.badge-group {
+  margin-bottom: 2rem;
+}
+.badge {
+  --main-color: var(--color-dark-gray);
+  color: var(--main-color);
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-right: 0.5rem;
+  border-bottom: 2px solid var(--color-accent);
+}
