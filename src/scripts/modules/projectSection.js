@@ -1,3 +1,6 @@
+import imgMovieNights from "../../img/mnhome.png";
+import imgComicsLib from "../../img/clhome.png";
+
 const projectSectionId = document.querySelector("#projects");
 
 const GITHUBHOST = "https://github.com/michaelt437";
@@ -9,7 +12,7 @@ const projectsBin = [
       "Using data from The Movie Database (TMDB), I built this application to easily manage a pool of movie choices and let fate decide tonight's movie with the press of a button. Currently using Vue 2, but eventually I will migrate to Vue 3.",
     siteUrl: "https://movienights.netlify.app",
     githubUrl: `${GITHUBHOST}/movie-nights-pwa`,
-    imagePath: "../../img/mnhome.png",
+    imagePath: imgMovieNights,
     stack: ["vue", "typescript", "tailwindcss", "firestore"],
   },
   {
@@ -18,7 +21,7 @@ const projectsBin = [
       "This CRUD application helps me keep track of my comic books - books I have, books I've read, keep a wishlist. I use this project to learn React and to try out a Firebase alternative called Supabase.",
     siteUrl: "https://comicslib.netlify.app",
     githubUrl: `${GITHUBHOST}/comiclib-next`,
-    imagePath: "../../img/clhome.png",
+    imagePath: imgComicsLib,
     stack: ["nextjs", "typescript", "tailwindcss", "supabase"],
   },
 ];
