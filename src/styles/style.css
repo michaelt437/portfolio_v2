@@ -7,6 +7,7 @@
 @import "buttons.css";
 @import "badges.css";
 @import "section.css";
+@import "footer.css";
 
 html,
 body {
@@ -23,13 +24,13 @@ body {
 .container {
   margin: 0 auto;
   @media (min-width: 1024px) {
-    width: 900px;
+    max-width: 900px;
   }
   @media (min-width: 1280px) {
-    width: 1120px;
+    max-width: 1120px;
   }
   @media (min-width: 1536px) {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
