@@ -13,7 +13,7 @@ const projectsBin = [
     siteUrl: "https://movienights.netlify.app",
     githubUrl: `${GITHUBHOST}/movie-nights-pwa`,
     imagePath: imgMovieNights,
-    stack: ["vue", "typescript", "tailwindcss", "firestore"],
+    stack: ["vue", "typescript", "tailwindcss", "firestore"]
   },
   {
     name: "Comics Library",
@@ -22,8 +22,8 @@ const projectsBin = [
     siteUrl: "https://comicslib.netlify.app",
     githubUrl: `${GITHUBHOST}/comiclib-next`,
     imagePath: imgComicsLib,
-    stack: ["nextjs", "typescript", "tailwindcss", "supabase"],
-  },
+    stack: ["nextjs", "typescript", "tailwindcss", "supabase"]
+  }
 ];
 
 function generateProjectBlocks() {
@@ -66,23 +66,7 @@ function generateStackBadges(stackArr) {
 	`;
 }
 
-function generatePortfolioSection() {
-  return ` 
-<div class="section portfolio">
-	<div class="details">
-		<h3>michaeltran.dev</h3>
-		<p class="description" style="margin: 2rem 0;">
-			Made with Vite and Javascript 
-		</p>
-			<a href="${GITHUBHOST}/portfolio_v2" target="_blank" rel="noreferrer" class="btn">Github</a>
-			</div>
-</div>
-`;
-}
-
 export function initProjects() {
   const projects = generateProjectBlocks();
-  const portfolioSection = generatePortfolioSection();
   projectSectionId.insertAdjacentHTML("beforeend", projects);
-  projectSectionId.insertAdjacentHTML("beforeend", portfolioSection);
 }
