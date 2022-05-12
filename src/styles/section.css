@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   margin: 10rem 0;
-  padding: 0 10rem;
+  padding: 0 var(--padding-x-clamp-section);
 }
 
 .section.portfolio {

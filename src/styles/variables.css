@@ -15,4 +15,6 @@
   --blob-one: #392f5a;
   --blob-two: #058ed9;
   --blob-three: #b6465f;
+
+  --padding-x-clamp-section: clamp(2rem, 10vw - 1rem, 10rem);
 }
