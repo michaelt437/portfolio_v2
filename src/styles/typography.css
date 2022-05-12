@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600&display=swap");
 
 h1 {
-  font-size: 4rem;
+  font-size: clamp(2rem, 4vw + 1rem, 4rem);
   font-weight: 600;
 }
 
@@ -17,6 +17,7 @@ h3 {
 
 .body-text {
   font-size: 1.4rem;
+  font-size: clamp(1rem, 1vw + 1rem, 1.4rem);
 }
 
 .text-main {
