@@ -39,16 +39,24 @@
           <p class="body-text mb-1">Welcome!</p>
           <h1><span class="text-accent">michaeltran.dev</span></h1>
           <p class="body-text my-2">
-            Hi, I'm Michael! As a front end engineer, I am passionate about making an impact through building clean, friendly, and effective applications.
+            Hi, I'm Michael! As a front end engineer, I am passionate about
+            making an impact through building clean, friendly, and effective
+            applications.
           </p>
           <p class="body-text">Thanks for visiting!</p>
           <div class="btn-group">
-            <button class="btn btn-tert">Projects</button>
+            <button class="btn btn-tert" onclick="scrollToProjects()">
+              Projects
+            </button>
             <button class="btn">Work</button>
           </div>
         </div>
       </div>
-      <div id="projects" class="container">
+      <div id="projects" class="container" style="position: relative">
+        <div
+          id="projects-anchor"
+          style="position: absolute; top: -82px; left: 0"
+        ></div>
         <h2 class="text-center">Projects</h2>
       </div>
       <footer id="footer"></footer>
