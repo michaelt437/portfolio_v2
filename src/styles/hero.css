@@ -38,7 +38,7 @@
     right: 40%;
     opacity: 0.3;
     animation: amoebous 30s ease-in-out infinite alternate-reverse,
-      spin 70s linear infinite reverse;
+      spin 75s linear infinite reverse;
   }
 
   @media (max-width: 767px) {
