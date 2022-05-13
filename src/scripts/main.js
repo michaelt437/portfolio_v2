@@ -8,3 +8,10 @@ initFooter();
 //document.addEventListener("mousemove", (e) => {
 //  document.querySelector(":root").style.setProperty("--hue", e.clientX * 0.09);
 //});
+
+window.scrollToProjects = () => {
+  document.getElementById("projects-anchor").scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+  });
+};
