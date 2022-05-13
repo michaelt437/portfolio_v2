@@ -6,7 +6,11 @@
   position: sticky;
   top: 0;
   z-index: 10;
-	background-color: var(--color-main);
+  background-color: var(--color-main);
+
+  @media (max-width: 767px) {
+    padding: 1rem 2rem;
+  }
 }
 
 .logo {
