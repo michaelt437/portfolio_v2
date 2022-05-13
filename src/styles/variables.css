@@ -17,4 +17,6 @@
   --blob-three: #b6465f;
 
   --padding-x-clamp-section: clamp(2rem, 10vw - 1rem, 10rem);
+  --blob-one-dimensions: clamp(200px, 30vw + 1rem, 500px);
+  --blob-two-dimensions: clamp(100px, 20vw + 1rem, 300px);
 }

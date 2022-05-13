@@ -14,31 +14,35 @@
 }
 
 .blob {
-  width: 500px;
-  height: 500px;
   position: absolute;
   border: 1px solid;
   border-radius: 50%;
   z-index: 1;
 
   &.one {
+    width: var(--blob-one-dimensions);
+    height: var(--blob-one-dimensions);
     border-color: var(--color-tert);
-    top: 0px;
-    right: 50px;
+    top: 15%;
+    right: 20%;
     opacity: 0.5;
     animation: amoebous 15s ease-in-out infinite alternate-reverse,
       spin 120s linear infinite;
   }
 
   &.two {
+    width: var(--blob-two-dimensions);
+    height: var(--blob-two-dimensions);
     border-color: var(--color-accent);
-    bottom: 100px;
-    right: 370px;
-    width: 300px;
-    height: 300px;
+    bottom: 20%;
+    right: 40%;
     opacity: 0.3;
     animation: amoebous 30s ease-in-out infinite alternate-reverse,
       spin 70s linear infinite reverse;
+  }
+
+  @media (max-width: 767px) {
+    display: none;
   }
 }
 
