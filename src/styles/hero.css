@@ -24,7 +24,7 @@
     height: var(--blob-one-dimensions);
     border-color: var(--color-tert);
     top: 15%;
-    right: 20%;
+    right: 10%;
     opacity: 0.5;
     animation: amoebous 15s ease-in-out infinite alternate-reverse,
       spin 120s linear infinite;

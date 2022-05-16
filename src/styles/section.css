@@ -3,20 +3,21 @@
   align-items: center;
   margin: 10rem 0;
   padding: 0 var(--padding-x-clamp-section);
-}
 
-.section.portfolio {
-  justify-content: center;
-  text-align: center;
-  padding: 3rem;
-  background-color: var(--color-light-gray);
-  border-radius: var(--border-radius);
+  @media (max-width: 767px) {
+    margin: 7rem 0;
+  }
 }
 
 .details,
 .gallery {
   flex-basis: 45%;
   z-index: 2;
+
+  @media (max-width: 767px) {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
 }
 
 .description {
@@ -38,4 +39,11 @@
 .gallery img {
   width: 100%;
   display: block;
+}
+
+#projects .section {
+  @media (max-width: 767px) {
+    flex-direction: column-reverse;
+    justify-content: space-around;
+  }
 }

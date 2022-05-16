@@ -1,12 +1,14 @@
+.nav-wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: var(--color-main);
+}
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 2rem;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  background-color: var(--color-main);
 
   @media (max-width: 767px) {
     padding: 1rem 2rem;
