@@ -3,12 +3,21 @@
   align-items: center;
   margin: 10rem 0;
   padding: 0 var(--padding-x-clamp-section);
+
+  @media (max-width: 767px) {
+    margin: 7rem 0;
+  }
 }
 
 .details,
 .gallery {
   flex-basis: 45%;
   z-index: 2;
+
+  @media (max-width: 767px) {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
 }
 
 .description {
@@ -34,7 +43,7 @@
 
 #projects .section {
   @media (max-width: 767px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: space-around;
   }
 }
