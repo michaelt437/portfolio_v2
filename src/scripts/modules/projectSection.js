@@ -13,7 +13,7 @@ const projectsBin = [
     siteUrl: "https://movienights.netlify.app",
     githubUrl: `${GITHUBHOST}/movie-nights-pwa`,
     imagePath: imgMovieNights,
-    stack: ["vue", "typescript", "tailwindcss", "firestore"]
+    stack: ["vue", "typescript", "tailwindcss", "firestore"],
   },
   {
     name: "Comics Library",
@@ -22,8 +22,8 @@ const projectsBin = [
     siteUrl: "https://comicslib.netlify.app",
     githubUrl: `${GITHUBHOST}/comiclib-next`,
     imagePath: imgComicsLib,
-    stack: ["nextjs", "typescript", "tailwindcss", "supabase"]
-  }
+    stack: ["nextjs", "typescript", "tailwindcss", "supabase"],
+  },
 ];
 
 function generateProjectBlocks() {
@@ -31,7 +31,7 @@ function generateProjectBlocks() {
 		${projectsBin
       .map(
         ({ name, description, siteUrl, githubUrl, imagePath, stack }) => `
-<div class="section">
+<div class="section" data-sal="slide-up" data-sal-duration="700">
 	<div class="halo"></div>
 	<div class="details">
 		<h3>${name}</h3>

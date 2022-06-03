@@ -14,5 +14,8 @@
     "postcss-nested": "^5.0.6",
     "vite": "^2.7.2"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "sal.js": "^0.8.5"
+  }
 }
