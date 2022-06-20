@@ -26,10 +26,19 @@
           />
         </svg>
         <ol class="nav-items">
-          <li class="nav-item active">About</li>
-          <li class="nav-item">Projects</li>
-          <li class="nav-item">Experience</li>
-          <li class="nav-item">Contact</li>
+          <li
+            class="nav-item active"
+            onclick="window.scrollTo({ top: 0, behavior: 'smooth'})"
+          >
+            About
+          </li>
+          <li class="nav-item" onclick="scrollToProjects()">Projects</li>
+          <li
+            class="nav-item"
+            onclick="window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth'})"
+          >
+            Contact
+          </li>
         </ol>
       </div>
     </div>
