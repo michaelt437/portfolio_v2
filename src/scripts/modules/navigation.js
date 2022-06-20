@@ -7,8 +7,6 @@ const SVGMENU = "M4 8h16M4 16h16";
 const SVGCLOSE = "M6 18L18 6M6 6l12 12";
 
 function clickNavItem(e) {
-  document.querySelector(".nav-item.active").classList.remove("active");
-  e.target.classList.add("active");
   if (navContainer.classList.contains("show")) {
     toggleMenu();
   }
