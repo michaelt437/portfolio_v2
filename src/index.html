@@ -27,13 +27,17 @@
         </svg>
         <ol class="nav-items">
           <li
+            id="about"
             class="nav-item active"
             onclick="window.scrollTo({ top: 0, behavior: 'smooth'})"
           >
             About
           </li>
-          <li class="nav-item" onclick="scrollToProjects()">Projects</li>
+          <li id="projectLink" class="nav-item" onclick="scrollToProjects()">
+            Projects
+          </li>
           <li
+            id="contact"
             class="nav-item"
             onclick="window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth'})"
           >
