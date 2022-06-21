@@ -4,21 +4,20 @@ export function navOberserver() {
   let contactLink = document.querySelector("#contact");
 
   let observer = new IntersectionObserver(
-    (entries, observer) => {
+    (entries, _) => {
       document.querySelector(".nav-item.active").classList.remove("active");
-      let falsyIntersects = entries.filter((entry) => !entry.isIntersecting);
+      let truthyIntersects = entries.filter((entry) => entry.isIntersecting);
 
-      if (
-        falsyIntersects.length === 2 ||
-        (falsyIntersects.length && falsyIntersects[0])
-      ) {
+      if (!truthyIntersects.length) {
         projectLink.classList.add("active");
       } else {
         entries.forEach((entry) => {
-          if (entry.target.id === "hero") {
-            aboutLink.classList.add("active");
-          } else if (entry.target.id === "footer") {
-            contactLink.classList.add("active");
+          if (entry.intersectionRatio > 0) {
+            if (entry.target.id === "hero") {
+              aboutLink.classList.add("active");
+            } else if (entry.target.id === "footer") {
+              contactLink.classList.add("active");
+            }
           }
         });
       }
