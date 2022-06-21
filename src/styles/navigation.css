@@ -45,6 +45,10 @@
 }
 
 .nav-items {
+  a {
+    color: var(--color-tert);
+  }
+
   @media (max-width: 767px) {
     background-color: var(--color-main);
     position: fixed;

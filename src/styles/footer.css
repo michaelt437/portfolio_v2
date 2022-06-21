@@ -1,5 +1,9 @@
 footer {
-	text-align: center;
-	padding: 3rem 0;
-	background-color: var(--color-light-gray);
+  text-align: center;
+  padding: 3rem 0;
+  background-color: var(--color-light-gray);
+}
+
+footer a {
+  color: var(--color-tert);
 }
