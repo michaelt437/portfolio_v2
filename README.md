@@ -1,6 +1,6 @@
 # Portfolio
 
-Check it out! - [michaeltran.dev](https://michaeltran.dev)
+Check it out! - [michaeltran.netlify.app](https://michaeltran.netlify.app)
 
 **Stack**
 - HTML
